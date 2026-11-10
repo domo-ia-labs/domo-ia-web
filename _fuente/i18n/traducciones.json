@@ -803,11 +803,26 @@
   "en": "Damián Roba Jesset on LinkedIn",
   "it": "Damián Roba Jesset su LinkedIn"
  },
- "Líder Técnico": {"en": "Technical Lead", "it": "Responsabile Tecnico"},
- "Ingeniero de Software, Duoc UC.": {"en": "Software Engineer, Duoc UC.", "it": "Ingegnere del software, Duoc UC."},
- "Mención en Gestión de Proyectos y Digitalización.": {"en": "Specialisation in Project Management and Digitalisation.", "it": "Indirizzo in Gestione dei progetti e Digitalizzazione."},
- "Jean Carlos Aldea": {"en": "=", "it": "="},
- "LinkedIn de Jean Carlos Aldea": {"en": "Jean Carlos Aldea on LinkedIn", "it": "Jean Carlos Aldea su LinkedIn"},
+ "Líder Técnico": {
+  "en": "Technical Lead",
+  "it": "Responsabile Tecnico"
+ },
+ "Ingeniero de Software, Duoc UC.": {
+  "en": "Software Engineer, Duoc UC.",
+  "it": "Ingegnere del software, Duoc UC."
+ },
+ "Mención en Gestión de Proyectos y Digitalización.": {
+  "en": "Specialisation in Project Management and Digitalisation.",
+  "it": "Indirizzo in Gestione dei progetti e Digitalizzazione."
+ },
+ "Jean Carlos Aldea": {
+  "en": "=",
+  "it": "="
+ },
+ "LinkedIn de Jean Carlos Aldea": {
+  "en": "Jean Carlos Aldea on LinkedIn",
+  "it": "Jean Carlos Aldea su LinkedIn"
+ },
  "Víctor Calvo": {
   "en": "=",
   "it": "="
@@ -1739,5 +1754,13 @@
  "© 2026 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.": {
   "en": "=",
   "it": "="
+ },
+ "Domo IA — Agentes de IA que llevan del anuncio a la reunión": {
+  "en": "Domo IA — AI agents that take you from the ad to the meeting",
+  "it": "Domo IA — Agenti IA che portano dall'annuncio all'incontro"
+ },
+ "Trabajadores digitales con nombre y cargo: traen leads desde tus anuncios, los atienden en menos de 1 minuto, agendan la reunión y automatizan lo repetitivo.": {
+  "en": "Digital workers with names and job titles: they bring in leads from your ads, answer in under a minute, book the meeting and automate repetitive work.",
+  "it": "Lavoratori digitali con nome e ruolo: portano i lead dai tuoi annunci, rispondono in meno di un minuto, fissano l'incontro e automatizzano il lavoro ripetitivo."
  }
 }
