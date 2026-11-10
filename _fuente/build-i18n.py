@@ -34,6 +34,7 @@ TRANSLATABLE_META = {
     ("property", "og:description"),
     ("name", "twitter:title"),
     ("name", "twitter:description"),
+    ("property", "og:image:alt"),
 }
 PROPER_EQUAL = {
     "Domo IA", "domo IA", "domo-ia", "DOMO IA", "Antonia", "Matías", "Sofía",
@@ -523,7 +524,16 @@ def render_language(tokens: list[dict], lang: str, translations: dict) -> tuple[
             attrs = attrs_for_language(token, lang, translations, pending, missing)
             out.append(render_token(token, attrs))
             translated = translate(key, lang, translations, pending, missing)
-            out.append(apply_markers(translated, markers))
+            # Los tags hijos de una unidad tambien se localizan (wa.me, alt, aria-label).
+            # El orden replica el de unit_key: un marcador por start/end/startend.
+            localized = []
+            for inner in tokens[i + 1:end]:
+                if inner["type"] in {"start", "startend"}:
+                    localized.append(render_token(inner, attrs_for_language(inner, lang, translations, pending, missing)))
+                elif inner["type"] == "end":
+                    localized.append(inner["raw"])
+            assert len(localized) == len(markers), "marcadores desalineados"
+            out.append(apply_markers(translated, localized))
             out.append(tokens[end]["raw"])
             skip_until = end
             continue
